@@ -1,1118 +1,150 @@
-
-
-.home-page {
-    background-color: #ffffff33;
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home-page {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
-  .home-page .div {
-    background-color: #ffffff33;
-    height: 3484px;
+  .header {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .a-propos, .je-suis, .skills-home-page, .portfolio-home-page {
+    margin-bottom: 2rem;
+  }
+  
+  .info-group {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .description, .photo-section, .skills-list, .portfolio-list, .contact-info {
+    margin-top: 1rem;
+  }
+  
+  .photo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cadre {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    margin-right: 1rem;
+  }
+  
+  .skills-list, .portfolio-list, .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .skill-item {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .skill-label {
+    font-weight: bold;
+  }
+  
+  .skill-bar {
+    background: #eee;
+    border-radius: 5px;
     overflow: hidden;
-    position: relative;
-    width: 1440px;
+    margin-top: 0.5rem;
   }
   
-  .home-page .a-propos {
-    height: 942px;
-    left: 0;
-    position: absolute;
-    top: 591px;
-    width: 1444px;
-  }
-  
-  .home-page .overlap {
-    background-color: #1f1f1f;
-    height: 942px;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .home-page .text-wrapper {
-    color: #ffffff33;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 100px;
-    font-weight: 900;
-    left: 452px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 535px;
-  }
-  
-  .home-page .text-wrapper-2 {
-    color: #ff9eec;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 75px;
-    font-weight: 900;
-    left: 519px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 38px;
-    width: 402px;
-  }
-  
-  .home-page .contenue {
-    height: 577px;
-    left: 361px;
-    position: absolute;
-    top: 247px;
-    width: 985px;
-  }
-  
-  .home-page .je-m-appel-gabriel {
-    color: transparent;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 482px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 83px;
-    width: 274px;
-  }
-  
-  .home-page .span {
-    color: #fafafa;
-  }
-  
-  .home-page .text-wrapper-3 {
-    color: #ff9eec;
-  }
-  
-  .home-page .overlap-group {
-    height: 51px;
-    left: 482px;
-    position: absolute;
-    top: 261px;
-    width: 164px;
-  }
-  
-  .home-page .text-wrapper-4 {
-    color: #ff9eec;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 54px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 57px;
-  }
-  
-  .home-page .text-wrapper-5 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 20px;
-    width: 164px;
-  }
-  
-  .home-page .overlap-2 {
-    height: 51px;
-    left: 756px;
-    position: absolute;
-    top: 261px;
-    width: 100px;
-  }
-  
-  .home-page .text-wrapper-6 {
-    color: #ff9eec;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 11px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 77px;
-  }
-  
-  .home-page .p {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 20px;
-    width: 100px;
-  }
-  
-  .home-page .overlap-group-2 {
-    height: 51px;
-    left: 543px;
-    position: absolute;
-    top: 375px;
-    width: 43px;
-  }
-  
-  .home-page .text-wrapper-7 {
-    color: #ff9eec;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 6px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 31px;
-  }
-  
-  .home-page .text-wrapper-8 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 20px;
-    width: 43px;
-  }
-  
-  .home-page .overlap-3 {
-    height: 51px;
-    left: 711px;
-    position: absolute;
-    top: 375px;
-    width: 190px;
-  }
-  
-  .home-page .text-wrapper-9 {
-    color: #ff9eec;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 77px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 36px;
-  }
-  
-  .home-page .text-wrapper-10 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 20px;
-    width: 190px;
-  }
-  
-  .home-page .overlap-4 {
-    height: 69px;
-    left: 525px;
-    position: absolute;
-    top: 489px;
-    width: 353px;
-  }
-  
-  .home-page .text-wrapper-11 {
-    color: #ff9eec;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 137px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 49px;
-  }
-  
-  .home-page .text-wrapper-12 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 22px;
-    width: 323px;
-  }
-  
-  .home-page .text-wrapper-13 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 4px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 38px;
-    width: 349px;
-  }
-  
-  .home-page .text-wrapper-14 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 482px;
-    letter-spacing: 0;
-    line-height: 20px;
-    position: absolute;
-    top: 119px;
-    width: 477px;
-  }
-  
-  .home-page .overlap-5 {
-    height: 577px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 423px;
-  }
-  
-  .home-page .cadre {
-    border: 6px solid;
-    border-color: #ff9eec;
-    height: 522px;
-    left: 66px;
-    position: absolute;
-    top: 55px;
-    width: 357px;
-  }
-  
-  .home-page .ma-photo {
-    height: 522px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 357px;
-  }
-  
-  .home-page .je-suis {
-    height: 497px;
-    left: 0;
-    position: absolute;
-    top: 93px;
-    width: 1446px;
-  }
-  
-  .home-page .overlap-6 {
-    background-color: #232323;
-    height: 497px;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .home-page .text-wrapper-15 {
-    color: #ffffff33;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 75px;
-    font-weight: 900;
-    left: 120px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 39px;
-    width: 275px;
-  }
-  
-  .home-page .text-wrapper-16 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 75px;
-    font-weight: 900;
-    left: 120px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 109px;
-    width: 1148px;
-  }
-  
-  .home-page .text-wrapper-17 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 75px;
-    font-weight: 900;
-    left: 120px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 177px;
-    width: 1148px;
-  }
-  
-  .home-page .cv-bouton {
-    height: 31px;
-    left: 120px;
-    position: absolute;
-    top: 318px;
-    width: 163px;
-  }
-  
-  .home-page .overlap-group-3 {
-    height: 31px;
-    position: relative;
-    width: 161px;
-  }
-  
-  .home-page .boutton-CV {
-    background-color: #ff9eec;
-    height: 28px;
-    left: 0;
-    position: absolute;
-    top: 1px;
-    width: 152px;
-  }
-  
-  .home-page .text-wrapper-18 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 12px;
-    font-weight: 900;
-    left: 3px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 158px;
-  }
-  
-  .home-page .carr-dco {
-    background-color: #ff9eec;
-    height: 25px;
-    left: 937px;
-    position: absolute;
-    top: 280px;
-    width: 25px;
-  }
-  
-  .home-page .overlap-7 {
-    height: 1952px;
-    left: 0;
-    position: absolute;
-    top: 1532px;
-    width: 1446px;
-  }
-  
-  .home-page .skills-home-page {
-    height: 804px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1446px;
-  }
-  
-  .home-page .overlap-8 {
-    background-color: #222222;
-    height: 804px;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .home-page .overlap-9 {
-    height: 288px;
-    left: 120px;
-    position: absolute;
-    top: 0;
-    width: 1209px;
-  }
-  
-  .home-page .text-wrapper-19 {
-    color: #ffffff33;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 100px;
-    font-weight: 900;
-    left: 438px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-  }
-  
-  .home-page .text-wrapper-20 {
-    color: #ff9eec;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 75px;
-    font-weight: 900;
-    left: 478px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 32px;
-  }
-  
-  .home-page .photoshop {
-    height: 55px;
-    left: 0;
-    position: absolute;
-    top: 233px;
-    width: 486px;
-  }
-  
-  .home-page .rectangle-wrapper {
-    background-color: #343434;
+  .skill-progress {
     height: 10px;
-    left: 0;
-    position: absolute;
-    top: 45px;
-    width: 477px;
+    background: #3b82f6;
   }
   
-  .home-page .rectangle {
-    background-color: #ff9eec;
-    height: 10px;
-    width: 403px;
+  .portfolio-item {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
   }
   
-  .home-page .text-wrapper-21 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 215px;
+  .contact-item {
+    display: flex;
+    align-items: center;
   }
   
-  .home-page .text-wrapper-22 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 14px;
-    font-weight: 900;
-    left: 431px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 14px;
-    width: 51px;
+  .contact-method {
+    margin-left: 1rem;
   }
   
-  .home-page .premierepro {
-    height: 55px;
-    left: 723px;
-    position: absolute;
-    top: 233px;
-    width: 486px;
+  .icon {
+    width: 30px;
+    height: 30px;
   }
   
-  .home-page .rectangle-2 {
-    background-color: #ff9eec;
-    height: 10px;
-    width: 299px;
+  .footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
   }
   
-  .home-page .text-wrapper-23 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 242px;
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .home-page .maquettage {
-    height: 55px;
-    left: 120px;
-    position: absolute;
-    top: 428px;
-    width: 486px;
-  }
-  
-  .home-page .rectangle-3 {
-    background-color: #ff9eec;
-    height: 10px;
-    width: 320px;
-  }
-  
-  .home-page .text-wrapper-24 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 239px;
-  }
-  
-  .home-page .illustrator {
-    height: 55px;
-    left: 843px;
-    position: absolute;
-    top: 428px;
-    width: 486px;
-  }
-  
-  .home-page .rectangle-4 {
-    background-color: #ff9eec;
-    height: 10px;
-    width: 241px;
-  }
-  
-  .home-page .text-wrapper-25 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 212px;
-  }
-  
-  .home-page .after-effect {
-    height: 55px;
-    left: 120px;
-    position: absolute;
-    top: 526px;
-    width: 486px;
-  }
-  
-  .home-page .rectangle-5 {
-    background-color: #ff9eec;
-    height: 10px;
-    width: 438px;
-  }
-  
-  .home-page .text-wrapper-26 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 108px;
-  }
-  
-  .home-page .skills {
-    height: 55px;
-    left: 843px;
-    position: absolute;
-    top: 526px;
-    width: 486px;
-  }
-  
-  .home-page .text-wrapper-27 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 233px;
-  }
-  
-  .home-page .figma {
-    height: 55px;
-    left: 120px;
-    position: absolute;
-    top: 331px;
-    width: 486px;
-  }
-  
-  .home-page .rectangle-6 {
-    background-color: #ff9eec;
-    height: 10px;
-    width: 357px;
-  }
-  
-  .home-page .text-wrapper-28 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 94px;
-  }
-  
-  .home-page .html-css {
-    height: 55px;
-    left: 843px;
-    position: absolute;
-    top: 331px;
-    width: 486px;
-  }
-  
-  .home-page .rectangle-7 {
-    background-color: #ff9eec;
-    height: 10px;
-    width: 273px;
-  }
-  
-  .home-page .text-wrapper-29 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 136px;
-  }
-  
-  .home-page .text-wrapper-30 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 30px;
-    font-weight: 900;
-    left: 493px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 660px;
-    width: 454px;
-  }
-  
-  .home-page .portfolio-home-page {
-    height: 836px;
-    left: 0;
-    position: absolute;
-    top: 771px;
-    width: 1444px;
-  }
-  
-  .home-page .overlap-10 {
-    height: 836px;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .home-page .portfolio {
-    background-color: #202020;
-    height: 804px;
-    left: 0;
-    position: absolute;
-    top: 32px;
-    width: 1440px;
-  }
-  
-  .home-page .text-wrapper-31 {
-    color: #ffffff33;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 100px;
-    font-weight: 900;
-    left: 456px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-  }
-  
-  .home-page .text-wrapper-32 {
-    color: #ff9eec;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 75px;
-    font-weight: 900;
-    left: 522px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 34px;
-  }
-  
-  .home-page .portfolio-logo {
-    height: 247px;
-    left: 256px;
-    position: absolute;
-    top: 311px;
-    width: 202px;
-  }
-  
-  .home-page .overlap-group-4 {
-    height: 206px;
-    left: -3px;
-    position: absolute;
-    top: 44px;
-    width: 206px;
-  }
-  
-  .home-page .logo-vv {
-    height: 200px;
-    left: 3px;
-    object-fit: cover;
-    position: absolute;
-    top: 3px;
-    width: 200px;
-  }
-  
-  .home-page .logo-case {
-    border: 3px solid;
-    border-color: #ff9eec;
-    height: 206px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 206px;
-  }
-  
-  .home-page .text-wrapper-33 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 61px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 78px;
-  }
-  
-  .home-page .groupe-site {
-    height: 247px;
-    left: 620px;
-    position: absolute;
-    top: 311px;
-    width: 202px;
-  }
-  
-  .home-page .text-wrapper-34 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 39px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 123px;
-  }
-  
-  .home-page .site-web-case {
-    height: 204px;
-    left: -2px;
-    object-fit: cover;
-    position: absolute;
-    top: 45px;
-    width: 204px;
-  }
-  
-  .home-page .groupe-vido {
-    height: 249px;
-    left: 982px;
-    position: absolute;
-    top: 311px;
-    width: 204px;
-  }
-  
-  .home-page .footer {
-    background-color: transparent;
-    height: 365px;
-    left: 0;
-    position: absolute;
-    top: 1587px;
-    width: 1442px;
-  }
-  
-  .home-page .overlap-11 {
-    height: 365px;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .home-page .footer-2 {
-    background-color: #ff9eec;
-    height: 344px;
-    left: 0;
-    position: absolute;
-    top: 21px;
-    width: 1440px;
-  }
-  
-  .home-page .text-wrapper-35 {
-    color: #ffffff;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 75px;
-    font-weight: 900;
-    left: 425px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-  }
-  
-  .home-page .text-footer {
-    height: 102px;
-    left: 277px;
-    position: absolute;
-    top: 190px;
-    width: 917px;
-  }
-  
-  .home-page .icon-phone {
-    height: 43px;
-    left: 56px;
-    position: absolute;
-    top: -1px;
-    width: 44px;
-  }
-  
-  .home-page .overlap-12 {
-    height: 98px;
-    left: 332px;
-    position: absolute;
-    top: 3px;
-    width: 221px;
-  }
-  
-  .home-page .icon-mail {
-    height: 44px;
-    left: 79px;
-    position: absolute;
-    top: 0;
-    width: 62px;
-  }
-  
-  .home-page .text-wrapper-36 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 14px;
-    font-weight: 900;
-    left: 63px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 43px;
-    width: 94px;
-  }
-  
-  .home-page .text-wrapper-37 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 14px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 67px;
-    width: 221px;
-  }
-  
-  .home-page .overlap-group-5 {
-    height: 101px;
-    left: 708px;
-    position: absolute;
-    top: 0;
-    width: 196px;
-  }
-  
-  .home-page .icon-linkedin {
-    height: 47px;
-    left: 77px;
-    position: absolute;
-    top: 0;
-    width: 47px;
-  }
-  
-  .home-page .text-wrapper-38 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 14px;
-    font-weight: 900;
-    left: 54px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 46px;
-    width: 94px;
-  }
-  
-  .home-page .text-wrapper-39 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 14px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-decoration: underline;
-    top: 70px;
-    width: 196px;
-  }
-  
-  .home-page .overlap-13 {
-    height: 55px;
-    left: 0;
-    position: absolute;
-    top: 47px;
-    width: 158px;
-  }
-  
-  .home-page .text-wrapper-40 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 14px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 158px;
-  }
-  
-  .home-page .text-wrapper-41 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 14px;
-    font-weight: 900;
-    left: 8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 24px;
-    width: 115px;
-  }
-  
-  .home-page .header {
-    background-color: #00000033;
-    height: 93px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1440px;
-  }
-  
-  .home-page .bouton-logo {
-    height: 81px;
-    left: 123px;
-    object-fit: cover;
-    position: absolute;
-    top: 6px;
-    width: 80px;
-  }
-  
-  .home-page .navbar {
-    height: 36px;
-    left: 668px;
-    position: absolute;
-    top: 29px;
-    width: 660px;
-  }
-  
-  .home-page .text-wrapper-42 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 526px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 126px;
-  }
-  
-  .home-page .text-wrapper-43 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 323px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 153px;
-  }
-  
-  .home-page .text-wrapper-44 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 181px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 91px;
-  }
-  
-  .home-page .text-wrapper-45 {
-    color: #fafafa;
-    font-family: "Inknut Antiqua-Black", Helvetica;
-    font-size: 20px;
-    font-weight: 900;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 131px;
-  }
-  
+  /* Responsive styles */
   @media (max-width: 768px) {
-    .text-wrapper {
-        font-size: 50px;
-      }
-    .text-wrapper-2 {
-        font-size: 37.5px;
-      }
-    .contenue {
-        width: 90%;
-        margin: 0 auto;
-      }
-    .je-m-appel-gabriel,
-    .text-wrapper-4,
-    .text-wrapper-5,
-    .text-wrapper-6,
-    .p,
-    .text-wrapper-7,
-    .text-wrapper-8,
-    .text-wrapper-9,
-    .text-wrapper-10,
-    .text-wrapper-11,
-    .text-wrapper-12,
-    .text-wrapper-13,
-    .text-wrapper-14 {
-        font-size: 12px;
-      }
+    .navbar {
+      flex-direction: column;
+      align-items: center;
     }
+  
+    .photo-section {
+      flex-direction: column;
+    }
+  
+    .skills-list, .portfolio-list, .contact-info {
+      flex-direction: column;
+    }
+  
+    .skill-item, .portfolio-item {
+      min-width: auto;
+    }
+  }
+  
